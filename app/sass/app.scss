@@ -6,12 +6,15 @@
 	align-items: center;
 }
 
-.col-about .h3 {
-	margin-bottom: 1.75rem;
-}
+.col-about {
+	.h3 {
+		margin-bottom: 1.75rem;
+	}
 
-.col-about .credit {
-	margin-top: 1.75rem;
+	.credit {
+		margin-top: 1.75rem;
+	}
+
 }
 
 form {
@@ -44,13 +47,16 @@ form {
 		padding: 2rem;
 	}
 
-	.row .col-form {
-		order: 2;
-	}
+	.row {
+		.col-form {
+			order: 2;
+		}
 
-	.row .col-about {
-		order: 1;
-		margin-bottom: 2rem;
+		.col-about {
+			order: 1;
+			margin-bottom: 2rem;
+		}
+
 	}
 
 }
