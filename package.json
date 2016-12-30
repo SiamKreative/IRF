@@ -1,0 +1,29 @@
+{
+  "name": "international-registration-form",
+  "version": "1.0.0",
+  "description": "A magic registration form that locates the user, and adapts accordingly. Has built-in country dropdown and international phone number.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "deploy": "surge dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiamKreative/IRF.git"
+  },
+  "author": "Julien Vernet <julien@vernet.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiamKreative/IRF/issues"
+  },
+  "homepage": "https://github.com/SiamKreative/IRF#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.5",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

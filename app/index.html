@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>International Registration Form</title>
+	<meta name="description" content="A magic registration form that locates the user, and adapts accordingly. Has built-in country dropdown and international phone number.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Animated loading spinner -->
+	<style type="text/css">.loading{overflow:hidden}.loading .container{opacity:0}.container{transition:opacity 1.2s ease-out}.spinner{width:40px;height:40px;background-color:#0275d8;position:absolute;top:50%;right:50%;margin:-20px -20px 0 0;-webkit-animation:sk-rotateplane 1.2s infinite ease-in-out;animation:sk-rotateplane 1.2s infinite ease-in-out}@-webkit-keyframes sk-rotateplane{0%{-webkit-transform:perspective(120px)}50%{-webkit-transform:perspective(120px) rotateY(180deg)}100%{-webkit-transform:perspective(120px) rotateY(180deg) rotateX(180deg)}}@keyframes sk-rotateplane{0%{transform:perspective(120px) rotateX(0) rotateY(0);-webkit-transform:perspective(120px) rotateX(0) rotateY(0)}50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0);-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0)}100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg)}}</style>
+
+	<!-- Show page once fully loaded -->
+	<script type="text/javascript">
+	window.onload = function(e) {
+		var body = document.getElementsByTagName('body')[0];
+		var spinner = document.getElementsByClassName('spinner')[0];
+		body.classList.remove('loading');
+		spinner.setAttribute('hidden', true);
+	};
+	</script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.bootstrap3.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/css/intlTelInput.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="loading">
+	<div class="spinner"></div>
+	<div class="container">
+
+		<div class="row flex-items-xs-middle">
+			<div class="col-xs col-form">
+				<form>
+					<div class="form-group">
+						<label for="email">Your Email address</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required="">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="phone">Your Phone</label>
+						<input type="tel" id="phone" class="form-control" required="">
+					</div>
+					<div class="form-group">
+						<label for="country">Your Country</label>
+						<select class="form-control" id="country" required="">
+							<option value="">Select a country...</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-primary">✔ Register Now</button>
+				</form>
+			</div>
+			<div class="col-xs col-about">
+				<h2 class="h3">International Registration Form</h2>
+				<p class="lead">A "magic" registration form that locates the user, and adapts accordingly.</p>
+				<p class="lead">Has built-in country dropdown (<a href="https://github.com/selectize/selectize.js">selectize.js</a>) and international phone number (<a href="https://github.com/jackocnr/intl-tel-input">intl-tel-input</a>).</p>
+				<div class="credit">Made with <img src="img/heart.svg" alt="love" title="love" width="16" height="16"> by <a href="https://siamkreative.com/">SiamKreative</a></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/js/intlTelInput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/10.0.2/js/utils.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
